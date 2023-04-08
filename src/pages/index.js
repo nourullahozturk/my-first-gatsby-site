@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 // The general process for using a plugin is to install it, configure it in your gatsby-config.js file, and then use it in your site as needed.
 // https://www.gatsbyjs.com/plugins
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 // Gatsby automatically creates pages for React components that are the default export of files in the src/pages directory.
 // Pages created in the src/pages directory use the name of the file as the route for the page.
@@ -23,7 +24,7 @@ const IndexPage = () => {
   );
 };
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <Seo title="Home Page" />;
 
 // You can use the Gatsby Head API by exporting a named function called Head in your pages and page templates (e.g. the ones used by createPage or the File System Route API).
 
