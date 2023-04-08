@@ -17,7 +17,7 @@ const IndexPage = () => {
         <p>I'm making this by following the Gatsby Tutorial.</p>
         <StaticImage
           alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-          src="../images/artists-eyes-kfTLKubjUnM-unsplash.jpg"
+          src="../images/blue-fish.min.webp"
         />
       </Layout>
     </main>
@@ -31,3 +31,7 @@ export const Head = () => <Seo title="Home Page" />;
 // Be sure to capitalize Head and please note that exporting this named function inside a component like Layout won’t add the metadata to the <head>. The above works because you’re exporting Head in a page inside src/pages.
 
 export default IndexPage;
+
+// Pro Tip: Since the credit link goes to an external page (in other words, one that’s not part of your site), you can use the <a> HTML tag instead of the Gatsby Link component.
+
+// Remember, Gatsby’s Link component only gives performance benefits for internal links to other pages within your site.
